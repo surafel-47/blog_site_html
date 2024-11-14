@@ -1,0 +1,74 @@
+<!-- Login Sign up page -->
+<div class="bg-gradient-to-tr from-white to-blue-100 dark:from-zinc-800 dark:to-slate-700 pt-20 h-full w-full">
+  <!-- Account Settings Page -->
+  <div class="bg-surface-light dark:bg-surface-dark mt-10 p-6 rounded-lg shadow-lg max-w-xl mx-auto">
+    <!-- Avatar and Edit Button -->
+    <div class="mb-6 flex items-center gap-4">
+      <!-- Avatar -->
+      <div class="relative">
+        <img
+          src="https://via.assets.so/watch.png?id=8&q=95&w=40&h=40"
+          alt="User Avatar"
+          class="w-24 h-24 rounded-full border-4 border-white shadow-lg"
+        />
+        <!-- Edit Avatar Button -->
+        <button
+          class="absolute bottom-0 right-0 p-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 transition-colors"
+          aria-label="Edit Avatar"
+        >
+          <i class="fas fa-edit"></i>
+        </button>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-text-light dark:text-text-dark">Abel Deerde - Editor</h3>
+        <p class="text-sm text-text-light dark:text-text-dark">@ab45-2 ⚪ abel@gmail.com</p>
+      </div>
+    
+    </div>
+
+    <!-- Notifications Toggle -->
+    <div class="mb-6 flex items-center justify-start">
+      <label for="notifications" class="text-sm text-text-light dark:text-text-dark mr-5">Notifications</label>
+      <input
+        type="checkbox"
+        id="notifications"
+        class="form-checkbox h-5 w-5 text-blue-500 border-gray-300 rounded focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-500"
+      />
+    </div>
+
+    <!-- Password Change Form -->
+    <div class="mb-6 w-2/3">
+      <h4 class="text-lg font-semibold text-text-light dark:text-text-dark mb-4">Change Password</h4>
+
+      <form action="#" method="POST">
+        <div class="mb-4">
+          <label for="new-password" class="block text-sm text-text-light dark:text-text-dark mb-2">New Password</label>
+          <input
+            type="password"
+            id="new-password"
+            name="new-password"
+            class="w-full p-3 text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border rounded-lg"
+            placeholder="Enter new password"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="confirm-password" class="block text-sm text-text-light dark:text-text-dark mb-2"
+            >Confirm New Password</label
+          >
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            class="w-full p-3 text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border rounded-lg"
+            placeholder="Confirm new password"
+          />
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-primary-light text-white rounded-lg hover:bg-blue-700 transition-colors">
+          Save Changes
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

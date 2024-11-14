@@ -1,0 +1,87 @@
+<!-- Login Sign up page -->
+<div class="bg-gradient-to-tr from-white to-blue-100 dark:from-zinc-800 dark:to-slate-700 pt-20 h-full w-full">
+  <!-- Blog Upload Form -->
+  <div class="bg-surface-light border  dark:bg-surface-dark p-6 rounded-lg shadow-lg dark:shadow-xl max-w-4xl mx-auto">
+    <h2 class="text-xl font-semibold text-text-light dark:text-text-dark mb-4">Create A New Blog Post</h2>
+
+    <!-- Blog Title -->
+    <div class="mb-4">
+      <label for="blog-title" class="block text-sm text-text-light dark:text-text-dark mb-2">Blog Title</label>
+      <input
+        type="text"
+        id="blog-title"
+        name="blog-title"
+        class="w-full p-3 text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border rounded-lg"
+        placeholder="Enter the blog title"
+      />
+    </div>
+
+    <!-- Banner Image Upload -->
+    <div class="mb-4">
+      <label for="banner-image" class="block text-sm text-text-light dark:text-text-dark mb-2">Banner Image</label>
+      <input
+        type="file"
+        id="banner-image"
+        name="banner-image"
+        accept="image/*"
+        class="w-full p-3 text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border rounded-lg"
+        onchange="previewBannerImage(event)"
+      />
+      <div class="mt-2">
+        <img id="banner-preview" class="hidden w-full h-48 object-cover rounded-lg" alt="Banner Preview" />
+      </div>
+    </div>
+
+    <!-- Category Selection -->
+    <div class="mb-4">
+      <label for="category" class="block text-sm text-text-light dark:text-text-dark mb-2">Select Category</label>
+      <select
+        id="category"
+        name="category"
+        class="w-full p-3 text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border rounded-lg"
+      >
+        <option value="" disabled selected>Select a category</option>
+        <option value="art">Art</option>
+        <option value="music">Music</option>
+        <option value="culture">Culture</option>
+        <option value="technology">Technology</option>
+      </select>
+    </div>
+
+    <!-- Rich Text Content -->
+    <div class="mb-4">
+      <label for="content" class="block text-sm text-text-light dark:text-text-dark mb-2">Content</label>
+      <textarea
+        id="content"
+        name="content"
+        class="w-full p-3 text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark border rounded-lg resize-none h-48"
+        placeholder="Write the blog content here..."
+      ></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button type="submit" class="w-full py-3 bg-primary-light text-white rounded-lg hover:bg-blue-700transition-colors">
+        Submit Blog
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Script for Previewing Banner Image -->
+<script>
+  function previewBannerImage(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      const preview = document.getElementById("banner-preview");
+      preview.src = e.target.result;
+      preview.classList.remove("hidden");
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }
+</script>

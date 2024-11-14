@@ -1,0 +1,96 @@
+<!-- Login Sign up page -->
+<div class="bg-gradient-to-tr from-white to-blue-100 dark:from-zinc-800 dark:to-slate-700 h-full w-full">
+  <!-- Main Container -->
+  <div class="flex items-center justify-center h-full">
+    <div class="bg-white dark:bg-background-dark rounded-xl shadow-lg p-8 w-[80%] max-w-md">
+      <!-- Logo -->
+      <div class="flex justify-center mb-6">
+        <img src="../assets/coffee.png" alt="Addis Times" class="w-16 h-16" />
+        <span class="text-2xl font-semibold text-primary-light">Addis Times</span>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form" class="form-transition pb-10">
+        <h2 class="text-2xl font-semibold text-primary-light text-center mb-6">Login</h2>
+
+        <!-- Username/Email Input -->
+        <input
+          type="text"
+          id="login-username"
+          class="w-full p-3 mb-4 bg-inputBg-light dark:bg-inputBg-dark border rounded-md text-text-light dark:text-text-dark"
+          placeholder="Username or Email"
+          required
+        />
+
+        <!-- Password Input -->
+        <input
+          type="password"
+          id="login-password"
+          class="w-full p-3 mb-4 bg-inputBg-light dark:bg-inputBg-dark border rounded-md text-text-light dark:text-text-dark"
+          placeholder="Password"
+          required
+        />
+
+        <!-- Login Button -->
+        <button class="w-full py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors" onclick="loadPage('home')">Sign In</button>
+
+        <!-- Createount Link -->
+        <p class="mt-4 text-center text-text-light dark:text-text-dark">
+          Don't have an account?
+          <button onclick="showSignup()" class="text-blue-500 hover:text-blue-400 transition-colors">Create an account</button>
+        </p>
+      </div>
+
+      <!-- Signup Form -->
+      <div id="signup-form" class="form-transition hidden mb-20">
+        <h2 class="text-2xl font-semibold text-primary-light dark:text-primary-dark text-center mb-6">Sign Up</h2>
+
+        <!-- Username Input -->
+        <input
+          type="text"
+          id="signup-username"
+          class="w-full p-3 mb-4 bg-inputBg-light dark:bg-inputBg-dark border rounded-md text-text-light dark:text-text-dark"
+          placeholder="Username"
+          required
+        />
+
+        <!-- Email Input -->
+        <input
+          type="email"
+          id="signup-email"
+          class="w-full p-3 mb-4 bg-inputBg-light dark:bg-inputBg-dark border rounded-md text-text-light dark:text-text-dark"
+          placeholder="Email"
+          required
+        />
+
+        <!-- Password Input -->
+        <input
+          type="password"
+          id="signup-password"
+          class="w-full p-3 mb-4 bg-inputBg-light dark:bg-inputBg-dark border rounded-md text-text-light dark:text-text-dark"
+          placeholder="Password"
+          required
+        />
+
+        <!-- Role Select -->
+        <select
+          id="signup-role"
+          class="w-full p-3 mb-4 bg-inputBg-light dark:bg-inputBg-dark border rounded-md text-text-light dark:text-text-dark"
+        >
+          <option value="" disabled selected>Sign up as</option>
+          <option value="viewer">Viewer</option>
+          <option value="editor">Editor</option>
+        </select>
+
+        <!-- Sign Up Button -->
+        <button class="w-full py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors" onclick="loadPage('blogs')">Sign Up</button>
+
+        <!-- Back to Login Link -->
+        <p class="mt-4 text-center text-text-light dark:text-text-dark">
+          Already have an account? <button onclick="showLogin()"  class="text-blue-500 hover:text-blue-400 transition-colors">Login</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>

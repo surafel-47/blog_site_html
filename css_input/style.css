@@ -1,0 +1,11 @@
+@tailwind base;
+@layer base {
+    /* Reset default margin and padding */
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
+@tailwind components;
+@tailwind utilities;
