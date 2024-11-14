@@ -1,4 +1,4 @@
-# Pomodoro Timer By Surafel ⏰
+# Blog Site Front End HTML, Tailwind UI by  Surafel ⏰
 
 Welcome to **Addis Times** – a dynamic platform where users can explore, share, and contribute the latest insights on technology, science, music, art, and much more.
 ---
