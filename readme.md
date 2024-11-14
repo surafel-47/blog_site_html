@@ -3,6 +3,8 @@
 Welcome to **Addis Times** – a dynamic platform where users can explore, share, and contribute the latest insights on technology, science, music, art, and much more.
 ---
 
+# live Demo at https://surafel-47.github.io/blog_site_html/
+
 ## 📁 Project Structure
 
 ├── assets/                     # Image files
