@@ -1,10 +1,12 @@
 <div class="text-text-light dark:text-text-dark">
   <section
-    class="overflow-hidden relative shadow-xl rounded-2xl m-10 bg-gradient-to-tr from-white to-blue-100 dark:from-zinc-800 dark:to-slate-700 flex flex-col md:flex-row items-center justify-between p-8 space-y-8 md:space-y-0"
+    class="overflow-hidden relative shadow-xl rounded-2xl m-10 bg-gradient-to-tr from-white to-blue-100 dark:from-zinc-800 dark:to-slate-700 flex flex-col md:flex-row items-start justify-between p-8 space-y-8 md:space-y-0"
   >
-    <div class="w-full md:w-1/2 relative z-10">
+    <div class="mt-[100px] w-full md:w-1/2 relative z-10">
       <div class="topPart">
-        <h1 class="text-[70px] sm:text-[100px] font-semibold">Welcome to Addis Times</h1>
+        <h1 class="text-[50px] sm:text-[70px] md:text-[100px] font-semibold">
+          Welcome to Addis Times
+        </h1>
         <p class="mt-4 text-lg">
           Explore the latest blogs about Tech, Science, Music, Art, and more. Stay updated
           with the trends, innovations, and creativity shaping the world
@@ -16,10 +18,10 @@
       >
         <i class="fas fa-search"></i> Explore
       </button>
-      <div class="shadow-md p-5 mt-16 rounded-xl bg-[#ffffffa5] dark:bg-[#0000002a]   backdrop-blur-sm">
-        <div
-          class="grid grid-cols-2 gap-4 w-[350px]  text-text-light dark:text-text-dark"
-        >
+      <div
+        class="shadow-md p-5 mt-16 rounded-xl bg-[#ffffffa5] dark:bg-[#0000002a] backdrop-blur-sm"
+      >
+        <div class="grid grid-cols-2 gap-4 w-[350px] text-text-light dark:text-text-dark">
           <div class="font-bold text-3xl">Our Users</div>
           <div class="font-bold text-3xl">Blogs</div>
           <div class="">80,000 +</div>
@@ -34,7 +36,7 @@
           <a
             href="#"
             onclick="loadPage('login')"
-            class="underline text-primary-dark font-bold hover:text-primary-light dark:hover:text-primary-light text-lg"
+            class="underline text-text-light dark:text-text-dark font-bold hover:text-primary-light text-lg"
             >Sign Up <i class="fas fa-user-plus"></i
           ></a>
         </div>
@@ -43,17 +45,13 @@
     <div class="w-full md:w-1/2 justify-center hidden md:flex">
       <img src="../assets/person.png" alt="Image" class="h-full" />
     </div>
-
-    <div class="splash_coffeee absolute bottom-[-100px] left-0 w-[800px] z-0">
-      <img src="../assets/splash.png" alt="" />
-    </div>
   </section>
 
   <!-- About Us Section -->
-  <section class="p-8 text-center">
+  <section class="p-8 text-center p-10 r">
     <h2 class="text-2xl font-semibold">Hi there! We are Addis Times! 🌍</h2>
 
-    <p class="m-10 mb-40 text-lg">
+    <p class="m-10 mx-20 mb-40 text-lg">
       Welcome to Addis Times, a platform that brings you the latest and most engaging
       blogs across a variety of topics including technology, science, music, and art.
       Whether you're an avid reader or a budding writer, there's something here for
@@ -103,163 +101,166 @@
       <a href="#" onclick="loadPage('viewBlog')">
         <img
           class="w-full h-full"
+          src="https://via.assets.so/game.png?id=15&q=95&w=460&h=580"
+          alt=""
+        />
+
+        <!-- Author Info (Visible on Hover) -->
+        <div
+          class="author-info absolute top-0 left-0 bg-gradient-to-b from-black/50 to-transparent w-full p-4 flex items-center gap-2 opacity-0 transition-opacity z-10"
+        >
+          <!-- Author Avatar -->
+          <img
+            src="https://via.assets.so/watch.png?id=5w=40&h=40"
+            alt="Author Avatar"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <a href="#" class="pl-2 flex flex-col text-gray-50 hover:text-blue-100">
+            <!-- Author Name and Username -->
+            <div class="text-sm font-semibold">Abebe Kebede</div>
+            <div class="text-sm font-semibold">@abkedb_47</div>
+          </a>
+        </div>
+
+        <!-- Blog Details -->
+        <div
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white"
+        >
+          <a href="#">
+            <h2 class="text-lg font-semibold hover:text-blue-200 hover:underline">
+              Exploring Art and Culture
+            </h2></a
+          >
+          <div class="text-sm flex flex-wrap">
+            <span class="text-gray-300">Oct 12, 2024</span>
+            <span class="mx-2"
+              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
+            ></span>
+            <span class="mx-2">
+              <i class="fa fa-eye mr-1 text-gray-300"></i> 1000 Views
+            </span>
+            <span class="mx-2"
+              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
+            ></span>
+            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs"
+              >Music</span
+            >
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="blog-card relative rounded-lg overflow-hidden shadow-lg">
+      <a href="#" onclick="loadPage('viewBlog')">
+        <img
+          class="w-full h-full"
+          src="https://via.assets.so/game.png?id=16&q=95&w=460&h=580"
+          alt=""
+        />
+
+        <!-- Author Info (Visible on Hover) -->
+        <div
+          class="author-info absolute top-0 left-0 bg-gradient-to-b from-black/50 to-transparent w-full p-4 flex items-center gap-2 opacity-0 transition-opacity z-10"
+        >
+          <!-- Author Avatar -->
+          <img
+            src="https://via.assets.so/watch.png?id=5w=40&h=40"
+            alt="Author Avatar"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <a href="#" class="pl-2 flex flex-col text-gray-50 hover:text-blue-100">
+            <!-- Author Name and Username -->
+            <div class="text-sm font-semibold">Abebe Kebede</div>
+            <div class="text-sm font-semibold">@abkedb_47</div>
+          </a>
+        </div>
+
+        <!-- Blog Details -->
+        <div
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white"
+        >
+          <a href="#">
+            <h2 class="text-lg font-semibold hover:text-blue-200 hover:underline">
+              Exploring Art and Culture
+            </h2></a
+          >
+          <div class="text-sm flex flex-wrap">
+            <span class="text-gray-300">Oct 12, 2024</span>
+            <span class="mx-2"
+              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
+            ></span>
+            <span class="mx-2">
+              <i class="fa fa-eye mr-1 text-gray-300"></i> 1000 Views
+            </span>
+            <span class="mx-2"
+              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
+            ></span>
+            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs"
+              >Music</span
+            >
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="blog-card relative rounded-lg overflow-hidden shadow-lg">
+      <a href="#" onclick="loadPage('viewBlog')">
+        <img
+          class="w-full h-full"
+          src="https://via.assets.so/game.png?id=7&q=95&w=460&h=580"
+          alt=""
+        />
+
+        <!-- Author Info (Visible on Hover) -->
+        <div
+          class="author-info absolute top-0 left-0 bg-gradient-to-b from-black/50 to-transparent w-full p-4 flex items-center gap-2 opacity-0 transition-opacity z-10"
+        >
+          <!-- Author Avatar -->
+          <img
+            src="https://via.assets.so/watch.png?id=5w=40&h=40"
+            alt="Author Avatar"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <a href="#" class="pl-2 flex flex-col text-gray-50 hover:text-blue-100">
+            <!-- Author Name and Username -->
+            <div class="text-sm font-semibold">Abebe Kebede</div>
+            <div class="text-sm font-semibold">@abkedb_47</div>
+          </a>
+        </div>
+
+        <!-- Blog Details -->
+        <div
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white"
+        >
+          <a href="#">
+            <h2 class="text-lg font-semibold hover:text-blue-200 hover:underline">
+              Exploring Art and Culture
+            </h2></a
+          >
+          <div class="text-sm flex flex-wrap">
+            <span class="text-gray-300">Oct 12, 2024</span>
+            <span class="mx-2"
+              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
+            ></span>
+            <span class="mx-2">
+              <i class="fa fa-eye mr-1 text-gray-300"></i> 1000 Views
+            </span>
+            <span class="mx-2"
+              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
+            ></span>
+            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs"
+              >Music</span
+            >
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="blog-card relative rounded-lg overflow-hidden shadow-lg">
+      <a href="#" onclick="loadPage('viewBlog')">
+        <img
+          class="w-full h-full"
           src="https://via.assets.so/game.png?id=14&q=95&w=460&h=580"
-          alt=""
-        />
-
-        <!-- Author Info (Visible on Hover) -->
-        <div
-          class="author-info absolute top-0 left-0 bg-gradient-to-b from-black/50 to-transparent w-full p-4 flex items-center gap-2 opacity-0 transition-opacity z-10"
-        >
-          <!-- Author Avatar -->
-          <img
-            src="https://via.assets.so/watch.png?id=5w=40&h=40"
-            alt="Author Avatar"
-            class="w-10 h-10 rounded-full border-2 border-white"
-          />
-          <a href="#" class="pl-2 flex flex-col text-gray-50 hover:text-blue-100">
-            <!-- Author Name and Username -->
-            <div class="text-sm font-semibold">Abebe Kebede</div>
-            <div class="text-sm font-semibold">@abkedb_47</div>
-          </a>
-        </div>
-
-        <!-- Blog Details -->
-        <div
-          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white"
-        >
-          <a href="#">
-            <h2 class="text-lg font-semibold hover:text-blue-200 hover:underline">
-              Exploring Art and Culture
-            </h2></a
-          >
-          <div class="text-sm flex flex-wrap">
-            <span class="text-gray-300">Oct 12, 2024</span>
-            <span class="mx-2"
-              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
-            ></span>
-            <span class="mx-2">
-              <i class="fa fa-eye mr-1 text-gray-300"></i> 1000 Views
-            </span>
-            <span class="mx-2"
-              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
-            ></span>
-            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs"
-              >Music</span
-            >
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="blog-card relative rounded-lg overflow-hidden shadow-lg">
-      <a href="#" onclick="loadPage('viewBlog')">
-        <img
-          class="w-full h-full"
-          src="https://via.assets.so/game.png?id=2&q=95&w=2500&h=780"
-          alt=""
-        />
-
-        <!-- Author Info (Visible on Hover) -->
-        <div
-          class="author-info absolute top-0 left-0 bg-gradient-to-b from-black/50 to-transparent w-full p-4 flex items-center gap-2 opacity-0 transition-opacity z-10"
-        >
-          <!-- Author Avatar -->
-          <img
-            src="https://via.assets.so/watch.png?id=5w=40&h=40"
-            alt="Author Avatar"
-            class="w-10 h-10 rounded-full border-2 border-white"
-          />
-          <a href="#" class="pl-2 flex flex-col text-gray-50 hover:text-blue-100">
-            <!-- Author Name and Username -->
-            <div class="text-sm font-semibold">Abebe Kebede</div>
-            <div class="text-sm font-semibold">@abkedb_47</div>
-          </a>
-        </div>
-
-        <!-- Blog Details -->
-        <div
-          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white"
-        >
-          <a href="#">
-            <h2 class="text-lg font-semibold hover:text-blue-200 hover:underline">
-              Exploring Art and Culture
-            </h2></a
-          >
-          <div class="text-sm flex flex-wrap">
-            <span class="text-gray-300">Oct 12, 2024</span>
-            <span class="mx-2"
-              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
-            ></span>
-            <span class="mx-2">
-              <i class="fa fa-eye mr-1 text-gray-300"></i> 1000 Views
-            </span>
-            <span class="mx-2"
-              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
-            ></span>
-            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs"
-              >Music</span
-            >
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="blog-card relative rounded-lg overflow-hidden shadow-lg">
-      <a href="#" onclick="loadPage('viewBlog')">
-        <img
-          class="w-full h-full"
-          src="https://via.assets.so/game.png?id=3&q=95&w=460&h=280"
-          alt=""
-        />
-
-        <!-- Author Info (Visible on Hover) -->
-        <div
-          class="author-info absolute top-0 left-0 bg-gradient-to-b from-black/50 to-transparent w-full p-4 flex items-center gap-2 opacity-0 transition-opacity z-10"
-        >
-          <!-- Author Avatar -->
-          <img
-            src="https://via.assets.so/watch.png?id=5w=40&h=40"
-            alt="Author Avatar"
-            class="w-10 h-10 rounded-full border-2 border-white"
-          />
-          <a href="#" class="pl-2 flex flex-col text-gray-50 hover:text-blue-100">
-            <!-- Author Name and Username -->
-            <div class="text-sm font-semibold">Abebe Kebede</div>
-            <div class="text-sm font-semibold">@abkedb_47</div>
-          </a>
-        </div>
-
-        <!-- Blog Details -->
-        <div
-          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white"
-        >
-          <a href="#">
-            <h2 class="text-lg font-semibold hover:text-blue-200 hover:underline">
-              Exploring Art and Culture
-            </h2></a
-          >
-          <div class="text-sm flex flex-wrap">
-            <span class="text-gray-300">Oct 12, 2024</span>
-            <span class="mx-2"
-              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
-            ></span>
-            <span class="mx-2">
-              <i class="fa fa-eye mr-1 text-gray-300"></i> 1000 Views
-            </span>
-            <span class="mx-2"
-              ><i class="fas fa-circle text-gray-300 text-[10px]"></i
-            ></span>
-            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs"
-              >Music</span
-            >
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="blog-card relative rounded-lg overflow-hidden shadow-lg">
-      <a href="#" onclick="loadPage('viewBlog')">
-        <img
-          class="w-full h-full"
-          src="https://via.assets.so/game.png?id=6&q=95&w=360&h=680"
           alt=""
         />
 
@@ -317,6 +318,14 @@
       Ethiopia. We are dedicated to delivering high-quality content across a variety of
       topics, including technology, science, culture, music, and art.
     </p>
+
+      <div class="flex items-center justify-center space-x-2 text-lg mt-5  text-text-light dark:text-text-dark ">
+        <a href="#" onclick="loadPage('home')" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors"> Home </a> 
+        <span>|</span> 
+        <a href="#" onclick="loadPage('blogs')" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors"> Blogs </a>
+        <span>|</span> 
+        <a href="#" onclick="loadPage('addPost')" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors"> New Blog </a>
+      </div>
   </section>
 
   <!-- Footer -->

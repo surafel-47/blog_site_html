@@ -13,7 +13,7 @@ function loadPage(page) {
 }
 
 // Load the home page by default on initial load
-window.onload = () => loadPage("home");
+window.onload = () => loadPage("viewBlog");
 
  // Toggle Mobile Menu Drawer
  const menuBtn = document.getElementById("menu-btn");
